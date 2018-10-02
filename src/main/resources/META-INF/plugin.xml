@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.jetbrains.pycharm-inspections</id>
+    <name>verification pycharm inspections</name>
+    <vendor email="kirill.timofeev@jetbrains.com" url="http://www.jetbrains.com">JetBrains</vendor>
+
+    <description>
+
+    </description>
+
+    <version>0.1</version>
+
+    <depends>com.intellij.modules.python</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection language="Python" shortName="PySuspiciousEqualsInspection" suppressId="PySuspiciousEq" displayName="Suspicious Equality check" groupKey="INSP.GROUP.python" enabledByDefault="true" level="WEAK WARNING" implementationClass="PySuspiciousEqualsInspection"/>
+        <localInspection language="Python" shortName="PyCompareDifferentPrimitiveTypesInspection" suppressId="PyDiffPrimitiveCompare" displayName="Incompatible primitive types" groupKey="INSP.GROUP.python" enabledByDefault="true" level="WEAK WARNING" implementationClass="PyCompareDifferentPrimitiveTypesInspection"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
